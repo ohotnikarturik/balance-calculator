@@ -229,25 +229,57 @@ p {
 }
 
 .item__text {
-  width: 40%;
+  width: 30%;
   text-align: center;
-  font-max-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item__num {
   font-weight: bold;
-  font-max-size: 20px;
-  width: 20%;
+  font-size: 18px;
+  width: 25%;
   text-align: center;
   border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item__date {
-  font-size: 14px;
-  width: 40%;
-  text-align: right;
+  font-size: 13px;
+  width: 30%;
+  text-align: center;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-delete {
+  margin-left: 5px;
+  width: 15%;
+  padding: 5px;
+  cursor: pointer;
+  background-color: crimson;
+  border-radius: 5px;
+  color: white;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: crimson;
+  font-weight: bold;
+  outline: none;
+  font-size: 14px;
+}
+
+.btn-delete:hover {
+  background-color: lightseagreen;
+  border: lightseagreen;
 }
 
 .balance {
