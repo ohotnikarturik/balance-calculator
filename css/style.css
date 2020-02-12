@@ -118,19 +118,18 @@ p {
 }
 
 .main__top {
-  margin-bottom: 30px;
-  width: 80%;
+  width: 100%;
 }
 
 .form {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
-.form__block, .form__btn {
+.form__block {
   margin-left: 20px;
-  width: 25%;
 }
 
 .form__input {
@@ -139,6 +138,7 @@ p {
   border-radius: 5px;
   outline: none;
   border: #332e3f;
+
 }
 
 .form__input:focus {
@@ -166,15 +166,23 @@ p {
 
 .form__select {
   height: 38px;
-  width: 100%;
   outline: none;
   border: #332e3f;
   color: dodgerblue;
   font-weight: bold;
 }
 
+.form__btn {
+  margin-left: 20px;
+}
+
+.form__btn-storage {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn {
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
   background-color: lightseagreen;
   border-radius: 5px;
@@ -184,9 +192,25 @@ p {
   border: lightseagreen;
   font-weight: bold;
   outline: none;
+  font-size: 18px;
 }
 
-.btn:hover {
+.btn-storage {
+  background-color: violet;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #332e3f;
+  min-width: 100px;
+  text-align: center;
+  border: lightseagreen;
+  font-weight: bold;
+  outline: none;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.btn:hover, .btn-storage:hover  {
   background-color: crimson;
   border: crimson;
 }
@@ -226,6 +250,7 @@ p {
   width: 100%;
   color: white;
   margin-bottom: 5px;
+  list-style-type: decimal;
 }
 
 .item__text {
@@ -312,6 +337,8 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
 
 
 
